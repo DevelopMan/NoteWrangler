@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="new-note">
+    <div class="new-note-container">
+        <form class="form">
+            <fieldset>
+                <label for="title">Title</label>
+                <input name="title" ng-model="note.title"/>
+            </fieldset>
+
+            <fieldset>
+                <label for="description">Description</label>
+                <textarea name="description" ng-model="note.description"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="content">Content</label>
+                <textarea name="content" ng-model="note.content"></textarea>
+            </fieldset>
+
+            <button class="btn">Save</button>
+        </form>
+    </div>
+</div>
